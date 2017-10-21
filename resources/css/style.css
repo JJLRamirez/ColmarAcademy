@@ -1,0 +1,53 @@
+/* Universal Styles*/
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header*/
+header {
+  display: flex;
+  vertical-align: middle;
+  height: 64px;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 24px;
+  align-items: center;
+}
+
+header span {
+  font-size: 32px;
+}
+
+.header-title {
+  display: flex;
+}
+
+#title-one {
+  font-weight: bold;
+}
+
+#title-two {
+  color: grey;
+}
+
+nav {
+  float: right;
+  padding-right: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 8px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
