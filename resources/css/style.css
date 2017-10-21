@@ -10,19 +10,28 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
 /*Header*/
 header {
   display: flex;
   vertical-align: middle;
-  height: 64px;
+  height: 4rem;
   width: 100%;
   justify-content: space-between;
-  padding-left: 24px;
+  padding-left: 1.5rem;
   align-items: center;
+  background-color: darkblue;
 }
 
 header span {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .header-title {
@@ -39,15 +48,59 @@ header span {
 
 nav {
   float: right;
-  padding-right: 24px;
+  padding-right: 1.5rem;
 }
 
 nav a {
   text-decoration: none;
   color: black;
-  margin: 8px;
+  margin: 0.5rem;
 }
 
 nav a:hover {
   text-decoration: underline;
+}
+
+/*Introduction section*/
+
+.learn-section {
+  background-color: grey;
+  display: flex;
+  padding: 2rem 1.5rem;
+}
+
+.learn-img-container {
+  width: 60%;
+  height: auto;
+}
+
+.learn-image {
+  width: 100%;
+  height: auto;
+  padding-right: 1.5rem;
+}
+
+.learn-text {
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: red;
+  width: 25%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+button {
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+/*Practice Section*/
+
+.practice {
+  padding: 2rem 1.5rem;
+}
+
+.practice img {
+  width: 60%;
+  height: auto;
 }
