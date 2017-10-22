@@ -104,3 +104,65 @@ button {
   width: 60%;
   height: auto;
 }
+
+.practice h1 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+/*.practice-quoted {
+  position: relative;
+  bottom: 2rem;
+}*/
+
+/*Campus info*/
+
+.campus-info {
+  display: flex;
+
+}
+
+.campus-info img {
+  max-width: 35%;
+  margin: 1rem;
+}
+
+.info-slot {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.info-slot h4 {
+  margin: 0.5rem 0;
+}
+
+.courses {
+  margin: 2rem 4.5rem;
+}
+
+.courses h1 {
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.course-slot {
+  margin: 2rem;
+  border: 2px solid black;
+}
+
+.courses img {
+  height: auto;
+  width: 100%;
+}
+
+.courses-text {
+  padding: 1rem;
+}
+
+
+#courses {
+  padding: 0.5rem 0;
+}
