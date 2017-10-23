@@ -166,3 +166,29 @@ button {
 #courses {
   padding: 0.5rem 0;
 }
+
+/*Thesis Section*/
+
+.thesis {
+  padding: 2rem 0 2rem 1.5rem;
+  width: 100%;
+  display: flex;
+}
+
+.thesis h1 {
+  display: block;
+}
+
+.thesis video {
+  height: auto;
+  width: 100%;
+}
+
+.thesis-sidebar {
+  width: 40%;
+}
+
+.thesis img {
+  height: auto;
+  width: 35%;
+}
