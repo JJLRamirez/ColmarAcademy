@@ -96,12 +96,18 @@ button {
 
 /*Practice Section*/
 
+.practice-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
 .practice {
   padding: 2rem 1.5rem;
 }
 
 .practice img {
-  width: 60%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -119,19 +125,28 @@ button {
 
 .campus-info {
   display: flex;
-
+  flex-direction: column;
+  width: 400px;
 }
 
 .campus-info img {
-  max-width: 35%;
+  max-width: 100%;
   margin: 1rem;
 }
 
 .info-slot {
   display: flex;
   flex-flow: wrap column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
   border: 2px solid black;
+  width: 400px;
+}
+
+.info-slot img {
+  max-width: 100%;
+  height: auto;
 }
 
 .info-slot h4 {
