@@ -239,27 +239,34 @@ button {
 
 /*Thesis Section*/
 
-.thesis {
+.thesis-container {
   padding: 2rem 0 2rem 1.5rem;
   width: 100%;
+  position: relative;
   display: flex;
+}
+
+.thesis-container h1 {
+  display: block;
   text-align: center;
 }
 
-.thesis h1 {
-  display: block;
+.thesis-video {
+  max-width: 100%;
+  height: auto;
 }
 
-.thesis video {
+.thesis-video video {
   height: auto;
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .thesis-sidebar {
   width: 40%;
 }
 
-.thesis img {
+.thesis-container img {
   height: auto;
-  width: 35%;
+  max-width: 100%;
 }
