@@ -89,9 +89,20 @@ nav a:hover {
   margin-bottom: auto;
 }
 
+.learn-text h1 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.learn-text h2 {
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
 button {
   padding: 0.5rem 0;
   width: 100%;
+  background-color: lightblue;
 }
 
 /*Practice Section*/
@@ -136,12 +147,31 @@ button {
 
 .info-slot {
   display: flex;
-  flex-flow: wrap column;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   align-content: center;
   border: 2px solid black;
   width: 400px;
+}
+
+.info-slot:hover {
+  background-color: red;
+}
+
+.info-img-box {
+  width: 35%;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  top: 1rem;
+  left: 2rem;
+  width: 35%;
+  border: 2px solid black;
 }
 
 .info-slot img {
@@ -151,7 +181,10 @@ button {
 
 .info-slot h4 {
   margin: 0.5rem 0;
+  font-weight: normal;
 }
+
+/*Courses*/
 
 .courses {
   margin: 2rem 4.5rem;
@@ -159,12 +192,34 @@ button {
 
 .courses h1 {
   padding-bottom: 2rem;
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.course-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  line-height: 1.15;
+}
+
+.course-information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .course-slot {
-  margin: 2rem;
+  height: 276px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 1rem;
+  background-color: white;
   border: 2px solid black;
 }
 
@@ -188,6 +243,7 @@ button {
   padding: 2rem 0 2rem 1.5rem;
   width: 100%;
   display: flex;
+  text-align: center;
 }
 
 .thesis h1 {
