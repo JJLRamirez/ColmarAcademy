@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: 'Arimo', sans-serif;
+  background-color: inherit;
 }
 
 h1 {
@@ -27,7 +28,9 @@ header {
   justify-content: space-between;
   padding-left: 1.5rem;
   align-items: center;
-  background-color: darkblue;
+  background-color: rgb(20,30,200);
+  position: fixed;
+  z-index: 10;
 }
 
 header span {
@@ -43,7 +46,7 @@ header span {
 }
 
 #title-two {
-  color: grey;
+  color: rgb(128,128,128);
 }
 
 nav {
@@ -64,9 +67,11 @@ nav a:hover {
 /*Introduction section*/
 
 .learn-section {
-  background-color: grey;
+  background-color: rgb(88, 115, 130);
   display: flex;
   padding: 2rem 1.5rem;
+  position: relative;
+  top: 4rem;
 }
 
 .learn-img-container {
@@ -83,7 +88,6 @@ nav a:hover {
 .learn-text {
   flex-flow: column wrap;
   justify-content: center;
-  background-color: red;
   width: 25%;
   margin-top: auto;
   margin-bottom: auto;
@@ -111,7 +115,7 @@ button {
   width: 100%;
   position: relative;
   display: flex;
-  background-color: azure;
+  background-color: rgb(240, 255, 255);
 }
 
 .practice {
@@ -152,12 +156,11 @@ button {
   flex-direction: row;
   justify-content: flex-start;
   align-content: center;
-  border: 2px solid black;
   width: 400px;
 }
 
 .info-slot:hover {
-  background-color: red;
+  background-color: rgb(160,180,255);
 }
 
 .info-img-box {
@@ -187,12 +190,16 @@ button {
 
 /*Courses*/
 
+.course-section {
+  background-color: rgb(88, 115, 130);
+}
+
 .courses {
-  margin: 2rem 4.5rem;
+  margin: 0 4.5rem;
 }
 
 .courses h1 {
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   margin: 0;
   width: 100%;
   text-align: center;
@@ -203,7 +210,6 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 1.5rem;
   line-height: 1.15;
 }
 
@@ -233,6 +239,9 @@ button {
   padding: 1rem;
 }
 
+.courses-text h4 {
+  font-weight: normal;
+}
 
 #courses {
   padding: 0.5rem 0;
@@ -245,9 +254,8 @@ button {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid black;
   position: relative;
-  margin-bottom: 2rem;
+  background-color: rgb(240, 255, 255);
 }
 
 .thesis-container h1 {
@@ -255,7 +263,6 @@ button {
   text-align: center;
   width: 100%;
   margin: 2rem;
-  border: 2px solid black;
 }
 
 .thesis-content {
@@ -295,17 +302,14 @@ button {
   width: 280px;
   display: flex;
   flex-direction: row;
-
-  background-color: white;
-  border: 2px solid black;
+  background-color: inherit;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
-  border: 2px solid black;
 }
 
 .thesis-slot:hover {
-  background-color: red;
+  background-color: rgb(160,180,255);
 }
 
 .thesis-img-container {
@@ -322,7 +326,7 @@ button {
 }
 
 footer {
-  background-color: pink;
+  background-color: rgb(20,30,200);
   display: flex;
   width: 100%;
   padding: 1rem 1.5rem;
