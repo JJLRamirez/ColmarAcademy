@@ -33,6 +33,11 @@ header {
   z-index: 10;
 }
 
+.mobile-header {
+  display: none;
+  width: 100%;
+}
+
 header span {
   font-size: 2rem;
 }
@@ -62,6 +67,20 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+/*Header for mobile*/
+@media only screen and (max-width: 1024px) {
+  .header-title,
+  header nav {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    height: 4rem;
+    justify-content: space-around;
+  }
 }
 
 /*Introduction section*/
@@ -109,11 +128,35 @@ button {
   background-color: lightblue;
 }
 
+/*Intro section for mobile*/
+@media only screen and (max-width: 1024px) {
+  .learn-section {
+    padding: 0;
+    display: block;
+  }
+
+  .learn-img-container {
+    width: 100%;
+  }
+
+  .learn-image {
+    padding: 0;
+  }
+
+  .learn-text {
+    padding: 2rem 1rem;
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*Practice Section*/
 
 .practice-container {
   width: 100%;
   position: relative;
+  top: 4rem;
   display: flex;
   background-color: rgb(240, 255, 255);
 }
@@ -132,17 +175,14 @@ button {
   padding-bottom: 1.5rem;
 }
 
-/*.practice-quoted {
-  position: relative;
-  bottom: 2rem;
-}*/
-
 /*Campus info*/
 
 .campus-info {
   display: flex;
   flex-direction: column;
   width: 400px;
+  position: relative;
+  top: 4rem;
 }
 
 .campus-info img {
@@ -167,6 +207,10 @@ button {
   width: 35%;
 }
 
+.info-img-box #mobile {
+  display: none;
+}
+
 .info-text {
   display: flex;
   flex-direction: column;
@@ -188,10 +232,52 @@ button {
   font-weight: normal;
 }
 
+/*Practice section for mobile*/
+@media only screen and (max-width: 1024px) {
+  .campus-info {
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .practice {
+    display: none;
+  }
+
+  .info-img-box #mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .info-img-box #mobile img {
+    margin: auto;
+    width: 100%;
+  }
+
+  .info-img-box img {
+    display: none;
+  }
+
+  .info-slot {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap column;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .info-text {
+    position: static;
+    margin: 0 0 2rem 2rem;
+  }
+}
+
 /*Courses*/
 
 .course-section {
   background-color: rgb(88, 115, 130);
+  position: relative;
+  top: 4rem;
 }
 
 .courses {
@@ -246,12 +332,33 @@ button {
 #courses {
   padding: 0.5rem 0;
 }
+/*Courses section for mobile*/
+@media only screen and (max-width: 1024px) {
+  .course-slot img,
+  .courses-text h4 {
+    display: none;
+  }
+
+  .course-slot {
+    height: auto;
+    margin-bottom: 0.25rem;
+  }
+
+  .course-section {
+    padding-bottom: 2rem;
+  }
+
+  .courses-text {
+    padding: 1rem;
+  }
+}
 
 /*Thesis Section*/
 
 .thesis-container {
   width: 100%;
   position: relative;
+  top: 4rem;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -325,11 +432,36 @@ button {
   font-weight: normal;
 }
 
+/*Thesis section for mobile*/
+@media only screen and (max-width: 1024px) {
+  .thesis-content h3,
+  .thesis-content p,
+  .thesis-sidebar {
+    display: none;
+  }
+
+  .thesis-content {
+    padding: 0;
+  }
+
+  .thesis-video {
+    width: 100%;
+    border: 2px solid black;
+  }
+
+  .thesis-video video {
+    max-width: 100%;
+  }
+}
+
+/*Footer section*/
 footer {
   background-color: rgb(20,30,200);
   display: flex;
   width: 100%;
   padding: 1rem 1.5rem;
+  position: relative;
+  top: 4rem;
 }
 
 footer p {
@@ -339,4 +471,11 @@ footer p {
 footer nav {
   margin-left: auto;
   margin-right: 0;
+}
+
+/*Footer section for mobile*/
+@media only screen and (max-width: 1024px) {
+  footer nav {
+    display: none;
+  }
 }
